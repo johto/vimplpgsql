@@ -52,30 +52,30 @@ syn keyword	pgType			trigger tid timestamptz text
 syn keyword	pgType			tsvector txid_snapshot unknown uuid void
 syn keyword	pgType			varchar varying xml xid
 
-syn match	pgType			"timestamp\W"
+syn match	pgType			"timestamp\>"
 syn match	pgType			"timestamp with time zone"
 syn match	pgType			"timestamp without time zone"
 syn region	pgType			start="timestamp(" end=")" contains=pgNumber
 
-syn region	pgType			start="float\W" end="."me=s-1
+syn region	pgType			start="float\>" end="."me=s-1
 syn region	pgType			start="float$" end="."me=s-1
 syn region	pgType			start="float(" end=")" contains=pgNumber
 syn region	pgType			start="double\W" end="."me=s-1
 syn region	pgType			start="double$" end="."me=s-1
 syn region	pgType			start="double(" end=")" contains=pgNumber
-syn region	pgType			start="double precision\W" end="."me=s-1
+syn region	pgType			start="double precision\>" end="."me=s-1
 syn region	pgType			start="double precision$" end="."me=s-1
 syn region	pgType			start="double precision(" end=")" contains=pgNumber
-syn region	pgType			start="real\W" end="."me=s-1
+syn region	pgType			start="real\>" end="."me=s-1
 syn region	pgType			start="real$" end="."me=s-1
 syn region	pgType			start="real(" end=")" contains=pgNumber
 syn region	pgType			start="numeric(" end=")" contains=pgNumber
 syn region	pgType			start="decimal(" end=")" contains=pgNumber
-syn region	pgType			start="\Wyear(" end=")" contains=pgNumber
+syn region	pgType			start="\<year(" end=")" contains=pgNumber
 syn region	pgType			start="^year(" end=")" contains=pgNumber
 syn region	pgType			start="^char(" end=")" contains=pgNumber
 syn region	pgType			start="^varchar(" end=")" contains=pgNumber
-syn region	pgType			start="\Wset(" end=")" contains=pgString
+syn region	pgType			start="\<set(" end=")" contains=pgString
 syn region	pgType			start="^set(" end=")" contains=pgString
 
 " Logical, string and numeric operators
@@ -87,13 +87,13 @@ syn keyword	plpgsqlFlow		continue exit raise return
 syn keyword	plpgsqlFlow		declare begin exception end
 syn keyword	plpgsqlFlow		loop foreach
 " this must be a match to allow FOR UPDATE etc. to take priority
-syn match	plpgsqlFlow		"for\W"
+syn match	plpgsqlFlow		"for\>"
 
 " A label (for e.g. a loop) in PL/PgSQL
 syn region	plpgsqlLabel	start="<<" end=">>"
 
 " Assignments in PL/PgSQL
-syn match	plpgsqlAssignment	"into\(\s\+strict\)\?\W"
+syn match	plpgsqlAssignment	"into\(\s\+strict\)\?\>"
 syn match	plpgsqlAssignment	":="
 
 " distinguish between INSERT INTO and SELECT .. INTO .. in PL/PgSQL; overrides
@@ -102,8 +102,8 @@ syn region	pgKeyword	start="insert" end="into"
 
 " General keywords
 syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)"
-syn match	pgKeyword	"strict\W"
-syn match	pgKeyword	"with\W"
+syn match	pgKeyword	"strict\>"
+syn match	pgKeyword	"with\>"
 
 syn keyword pgKeyword	abort alter aggregate analyze and as alias add
 syn keyword pgKeyword	by before
@@ -136,7 +136,7 @@ syn keyword pgKeyword	when where
 " CASE .. WHEN .. ELSE .. END;  needs special handling to avoid the fact that
 " THEN is a PL/PgSQL keyword
 syn keyword	pgCWKeyword	when then else contained
-syn region	pgCaseWhen	matchgroup=pgCWKeyword start="case\W" end="end\W" contains=ALLBUT,plpgsqlAssignment,plpgsqlFlow,plpgsqlLabel transparent
+syn region	pgCaseWhen	matchgroup=pgCWKeyword start="case\>" end="end\>" contains=ALLBUT,plpgsqlAssignment,plpgsqlFlow,plpgsqlLabel transparent
 
 
 " Use these, or don't
