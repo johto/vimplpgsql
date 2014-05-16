@@ -60,9 +60,6 @@ syn region	pgType			start="timestamp(" end=")" contains=pgNumber
 syn region	pgType			start="float\>" end="."me=s-1
 syn region	pgType			start="float$" end="."me=s-1
 syn region	pgType			start="float(" end=")" contains=pgNumber
-syn region	pgType			start="double\W" end="."me=s-1
-syn region	pgType			start="double$" end="."me=s-1
-syn region	pgType			start="double(" end=")" contains=pgNumber
 syn region	pgType			start="double precision\>" end="."me=s-1
 syn region	pgType			start="double precision$" end="."me=s-1
 syn region	pgType			start="double precision(" end=")" contains=pgNumber
@@ -71,12 +68,8 @@ syn region	pgType			start="real$" end="."me=s-1
 syn region	pgType			start="real(" end=")" contains=pgNumber
 syn region	pgType			start="numeric(" end=")" contains=pgNumber
 syn region	pgType			start="decimal(" end=")" contains=pgNumber
-syn region	pgType			start="\<year(" end=")" contains=pgNumber
-syn region	pgType			start="^year(" end=")" contains=pgNumber
 syn region	pgType			start="^char(" end=")" contains=pgNumber
 syn region	pgType			start="^varchar(" end=")" contains=pgNumber
-syn region	pgType			start="\<set(" end=")" contains=pgString
-syn region	pgType			start="^set(" end=")" contains=pgString
 
 " Logical, string and numeric operators
 syn keyword	pgOperator		between not and or is in like regexp rlike binary exists
