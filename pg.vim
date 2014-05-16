@@ -121,7 +121,7 @@ syn keyword pgKeyword	join
 syn keyword pgKeyword	key
 syn keyword pgKeyword	language lock local limit left load last
 syn keyword pgKeyword	max min move match
-syn keyword pgKeyword	notify no nowait new null nulls next
+syn keyword pgKeyword	notify no nowait new nulls next
 syn keyword pgKeyword	or operator outer order old on out open only
 syn keyword pgKeyword	prepare primary password primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
