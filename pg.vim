@@ -27,8 +27,9 @@ syn match	pgNumber		"\<0x[abcdefABCDEF0-9]*\>"
 
 " Comments
 syn keyword	pgTodo			TODO FIXME XXX BUG contained
-syn region	pgComment		start="/\*"  end="\*/" contains=pgComment,pgTodo
+syn region	pgMultiComment	start="/\*"  end="\*/" contains=pgMultiComment,pgTodo
 syn region	pgComment		start="--" end="$" contains=pgTodo
+hi def link	pgMultiComment	pgComment
 
 hi def link pgTodo			Todo
 syn sync	ccomment		pgComment
