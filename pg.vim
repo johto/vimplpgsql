@@ -97,7 +97,7 @@ syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
 syn match	pgKeyword	"strict\>"
 syn match	pgKeyword	"with\>"
 
-syn keyword pgKeyword	abort alter aggregate analyze and as alias add
+syn keyword pgKeyword	abort alter aggregate analyze and array as alias add
 syn keyword pgKeyword	by before
 syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
 syn keyword pgKeyword	cluster checkpoint check comment
