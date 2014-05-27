@@ -97,7 +97,7 @@ syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
 syn match	pgKeyword	"strict\>"
 syn match	pgKeyword	"with\>"
 
-syn keyword pgKeyword	abort alter aggregate analyze and array as alias add
+syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
 syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
 syn keyword pgKeyword	cluster checkpoint check comment
@@ -121,7 +121,7 @@ syn keyword pgKeyword	role replace reindex release reset revoke rollback referen
 syn keyword pgKeyword	returns returning
 syn keyword pgKeyword	select set schema sequence savepoint simple system stable setof
 syn keyword pgKeyword	truncate to tranaction trigger table tables temp temporary tablespace type
-syn keyword pgKeyword	update unique unlisten using
+syn keyword pgKeyword	update unique unlisten union using
 syn keyword pgKeyword	verbose view values varying vacuum
 syn keyword pgKeyword	when where
 
