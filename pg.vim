@@ -115,12 +115,12 @@ syn keyword pgKeyword	language lock local limit left load last
 syn keyword pgKeyword	max min move match
 syn keyword pgKeyword	notify no nowait new nulls next
 syn keyword pgKeyword	or operator outer order old on out open only
-syn keyword pgKeyword	prepare primary password primary privilege procedure partial prepared
+syn keyword pgKeyword	prepare primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
 syn keyword pgKeyword	role replace reindex release reset revoke rollback references row rows rowtype rule restrict
 syn keyword pgKeyword	returns returning
 syn keyword pgKeyword	select set schema sequence savepoint simple system stable setof
-syn keyword pgKeyword	truncate to tranaction trigger table tables temp temporary tablespace type
+syn keyword pgKeyword	truncate to transaction trigger table tables temp temporary tablespace type
 syn keyword pgKeyword	update unique unlisten union using
 syn keyword pgKeyword	verbose view values varying vacuum
 syn keyword pgKeyword	when where
