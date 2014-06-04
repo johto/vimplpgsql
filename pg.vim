@@ -94,8 +94,8 @@ syn region	pgKeyword	start="insert" end="into"
 
 " General keywords
 syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
-syn match	pgKeyword	"strict\>"
-syn match	pgKeyword	"with\>"
+syn match	pgKeyword	"\<strict\>"
+syn match	pgKeyword	"\<with\>"
 
 syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
