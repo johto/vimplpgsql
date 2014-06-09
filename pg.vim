@@ -71,7 +71,7 @@ syn region	pgType			start="char(" end=")" contains=pgNumber
 syn region	pgType			start="varchar(" end=")" contains=pgNumber
 
 " Logical, string and numeric operators
-syn keyword	pgOperator		between not and or is in like regexp rlike binary exists
+syn keyword	pgOperator		between not and is in like regexp rlike binary exists
 
 " PL/PgSQL control flow
 syn keyword	plpgsqlFlow		if then else elsif
@@ -97,6 +97,7 @@ syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
 syn match	pgKeyword	"\<strict\>"
 syn match	pgKeyword	"\<with\>"
 
+syn match   pgKeyword   "\<or\(\s\+replace\>\)\?\>"
 syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
 syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
@@ -114,10 +115,10 @@ syn keyword pgKeyword	key
 syn keyword pgKeyword	language lock local limit left load last
 syn keyword pgKeyword	max min move match
 syn keyword pgKeyword	notify no nowait new nulls next
-syn keyword pgKeyword	or operator outer order old on out open only
+syn keyword pgKeyword	operator outer order old on out open only
 syn keyword pgKeyword	prepare primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
-syn keyword pgKeyword	role replace reindex release reset revoke rollback references row rows rowtype rule restrict
+syn keyword pgKeyword	role reindex release reset revoke rollback references row rows rowtype rule restrict
 syn keyword pgKeyword	returns returning
 syn keyword pgKeyword	select set schema sequence savepoint simple system stable setof
 syn keyword pgKeyword	truncate to transaction trigger table tables temp temporary tablespace type
