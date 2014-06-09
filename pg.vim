@@ -90,7 +90,7 @@ syn match	plpgsqlAssignment	":="
 
 " distinguish between INSERT INTO and SELECT .. INTO .. in PL/PgSQL; overrides
 " plpgsqlAssignment, above.
-syn region	pgKeyword	start="insert" end="into"
+syn region	pgKeyword	start="\<insert\>" end="\<into\>"
 
 " General keywords
 syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
