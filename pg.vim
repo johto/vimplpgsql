@@ -82,7 +82,7 @@ syn keyword	plpgsqlFlow		loop foreach
 syn match	plpgsqlFlow		"for\>"
 
 " A label (for e.g. a loop) in PL/PgSQL
-syn region	plpgsqlLabel	start="<<" end=">>"
+syn region	plpgsqlLabel	start="<<[^+\-\*/<>=\~!@#%\^&|`?]" end=">>"
 
 " Assignments in PL/PgSQL
 syn match	plpgsqlAssignment	"into\(\s\+strict\)\?\>"
