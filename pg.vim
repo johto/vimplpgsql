@@ -102,7 +102,7 @@ syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
 syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
 syn keyword pgKeyword	cluster checkpoint check comment
-syn keyword pgKeyword	cast cascade character check column columns constraint create copy
+syn keyword pgKeyword	cast cascade check column columns constraint create copy
 syn keyword pgKeyword	database domain databases default delete distinct drop deallocate desc
 syn keyword pgKeyword	deferrable deferred defaults do diagnostics
 syn keyword pgKeyword	explain exists execute exclusion found except each
