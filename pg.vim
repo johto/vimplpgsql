@@ -103,7 +103,7 @@ syn keyword pgKeyword	by before
 syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
 syn keyword pgKeyword	cluster checkpoint check comment
 syn keyword pgKeyword	cast cascade check column columns constraint create copy
-syn keyword pgKeyword	database domain databases default delete distinct drop deallocate desc
+syn keyword pgKeyword	database definer domain databases default delete distinct drop deallocate desc
 syn keyword pgKeyword	deferrable deferred defaults do diagnostics
 syn keyword pgKeyword	explain exists execute exclusion found except each
 syn keyword pgKeyword	function foreign from full fetch first force
@@ -120,7 +120,7 @@ syn keyword pgKeyword	prepare primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
 syn keyword pgKeyword	role reindex release reset revoke rollback references row rows rowtype rule restrict
 syn keyword pgKeyword	returns returning
-syn keyword pgKeyword	select set schema sequence savepoint simple system stable setof
+syn keyword pgKeyword	security select set schema sequence savepoint simple system stable setof
 syn keyword pgKeyword	truncate to transaction trigger table tables temp temporary tablespace type
 syn keyword pgKeyword	update unique unlisten union using
 syn keyword pgKeyword	verbose view values varying vacuum
