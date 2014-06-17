@@ -77,7 +77,7 @@ syn keyword	pgOperator		between not and is in like regexp rlike binary exists
 syn keyword	plpgsqlFlow		if then else elsif
 syn keyword	plpgsqlFlow		continue exit raise return
 syn keyword	plpgsqlFlow		declare begin exception end
-syn keyword	plpgsqlFlow		loop foreach
+syn keyword	plpgsqlFlow		loop foreach while
 " this must be a match to allow FOR UPDATE etc. to take priority
 syn match	plpgsqlFlow		"for\>"
 
