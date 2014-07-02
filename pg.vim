@@ -89,7 +89,8 @@ syn match	plpgsqlAssignment	"into\(\s\+strict\)\?\>"
 syn match	plpgsqlAssignment	":="
 
 " distinguish between INSERT INTO and SELECT .. INTO .. in PL/PgSQL; overrides
-" plpgsqlAssignment, above.
+" plpgsqlAssignment, above.  But be careful with GRANT/REVOKE INSERT ...
+syn region  pgKeyword   start="\<revoke\|grant\>" end="\<select\|insert\|update\|delete\|truncate\|references\|trigger\|usage\|create\|connect\|temporary\|temp\|all\>"
 syn region	pgKeyword	start="\<insert\>" end="\<into\>"
 
 " General keywords
@@ -107,7 +108,7 @@ syn keyword pgKeyword	database definer domain databases default delete distinct 
 syn keyword pgKeyword	deferrable deferred defaults do diagnostics
 syn keyword pgKeyword	explain exists execute exclusion found except each
 syn keyword pgKeyword	function foreign from full fetch first force
-syn keyword pgKeyword	group grant global get
+syn keyword pgKeyword	group global get
 syn keyword pgKeyword	having
 syn keyword pgKeyword	index immutable inner initially immediate inherits instead in inout
 syn keyword pgKeyword	join
