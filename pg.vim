@@ -91,7 +91,7 @@ syn match	plpgsqlAssignment	":="
 " distinguish between INSERT INTO and SELECT .. INTO .. in PL/PgSQL; overrides
 " plpgsqlAssignment, above.  But be careful with GRANT/REVOKE INSERT ...
 syn region  pgKeyword   start="\<revoke\|grant\>" end="\<select\|insert\|update\|delete\|truncate\|references\|trigger\|usage\|create\|connect\|temporary\|temp\|all\>"
-syn region	pgKeyword	start="\<insert\>" end="\<into\>"
+syn region	pgKeyword	start="\<insert\>" end="\<into\|on\|or\>"
 
 " General keywords
 syn match	pgKeyword	"for \(update\|\(no key update\)\|share\|\(key share\)\)\>"
