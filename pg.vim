@@ -53,22 +53,22 @@ syn keyword	pgType			trigger tid timestamptz text
 syn keyword	pgType			tsvector txid_snapshot unknown uuid void
 syn keyword	pgType			varchar varying xml xid
 
-syn match	pgType			"timestamp\>"
-syn match	pgType			"timestamp with time zone\>"
-syn match	pgType			"timestamp without time zone\>"
-syn region	pgType			start="timestamp(" end=")" contains=pgNumber
-syn region	pgType			start="timestamptz(" end=")" contains=pgNumber
+syn match	pgType			"\<timestamp\>"
+syn match	pgType			"\<timestamp with time zone\>"
+syn match	pgType			"\<timestamp without time zone\>"
+syn region	pgType			start="\<timestamp(" end=")" contains=pgNumber
+syn region	pgType			start="\<timestamptz(" end=")" contains=pgNumber
 
 syn region	pgType			start="float\>" end="."me=s-1
-syn region	pgType			start="float(" end=")" contains=pgNumber
+syn region	pgType			start="\<float(" end=")" contains=pgNumber
 syn region	pgType			start="double precision\>" end="."me=s-1
-syn region	pgType			start="double precision(" end=")" contains=pgNumber
+syn region	pgType			start="\<double precision(" end=")" contains=pgNumber
 syn region	pgType			start="real\>" end="."me=s-1
-syn region	pgType			start="real(" end=")" contains=pgNumber
-syn region	pgType			start="numeric(" end=")" contains=pgNumber
-syn region	pgType			start="decimal(" end=")" contains=pgNumber
-syn region	pgType			start="char(" end=")" contains=pgNumber
-syn region	pgType			start="varchar(" end=")" contains=pgNumber
+syn region	pgType			start="\<real(" end=")" contains=pgNumber
+syn region	pgType			start="\<numeric(" end=")" contains=pgNumber
+syn region	pgType			start="\<decimal(" end=")" contains=pgNumber
+syn region	pgType			start="\<char(" end=")" contains=pgNumber
+syn region	pgType			start="\<varchar(" end=")" contains=pgNumber
 
 " Logical, string and numeric operators
 syn keyword	pgOperator		between not and is in like regexp rlike binary exists
