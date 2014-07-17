@@ -116,7 +116,7 @@ syn keyword pgKeyword	key
 syn keyword pgKeyword	language lock local limit left load last
 syn keyword pgKeyword	max min move match
 syn keyword pgKeyword	notify no nowait new nulls next
-syn keyword pgKeyword	operator outer order old on out open only overlaps
+syn keyword pgKeyword	of operator outer order old on out open only overlaps
 syn keyword pgKeyword	prepare primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
 syn keyword pgKeyword	role reindex release reset revoke rollback references row rows rowtype rule restrict
