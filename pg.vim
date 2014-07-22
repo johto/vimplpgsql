@@ -90,7 +90,7 @@ syn match	plpgsqlAssignment	":="
 
 " distinguish between INSERT INTO and SELECT .. INTO .. in PL/PgSQL; overrides
 " plpgsqlAssignment, above.  But be careful with GRANT/REVOKE INSERT ...
-syn region  pgKeyword   start="\<revoke\|grant\>" end="\<select\|insert\|update\|delete\|truncate\|references\|trigger\|usage\|create\|connect\|temporary\|temp\|all\>"
+syn region  pgKeyword   start="\<\(revoke\|grant\)\>" end="\<select\|insert\|update\|delete\|truncate\|references\|trigger\|usage\|create\|connect\|temporary\|temp\|all\>"
 syn region	pgKeyword	start="\<insert\>" end="\<into\|on\|or\>"
 
 " General keywords
@@ -119,7 +119,7 @@ syn keyword pgKeyword	notify no nowait new nulls next
 syn keyword pgKeyword	of operator outer order old on out open only overlaps
 syn keyword pgKeyword	prepare primary privilege procedure partial prepared
 syn keyword pgKeyword	partition preserve perform
-syn keyword pgKeyword	role reindex release reset revoke rollback references row rows rowtype rule restrict
+syn keyword pgKeyword	role reindex release reset rollback references row rows rowtype rule restrict
 syn keyword pgKeyword	returns returning
 syn keyword pgKeyword	security select set schema sequence savepoint simple system stable setof
 syn keyword pgKeyword	truncate to transaction trigger table tables temp temporary tablespace type
