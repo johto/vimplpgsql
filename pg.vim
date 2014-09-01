@@ -101,7 +101,7 @@ syn match	pgKeyword	"\<with\>"
 syn match   pgKeyword   "\<or\(\s\+replace\>\)\?\>"
 syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
-syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close
+syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close commit
 syn keyword pgKeyword	cluster checkpoint check comment
 syn keyword pgKeyword	cast cascade check column columns constraint create copy
 syn keyword pgKeyword	database definer domain databases default delete distinct drop deallocate desc
@@ -124,7 +124,7 @@ syn keyword pgKeyword	returns returning
 syn keyword pgKeyword	security select set schema sequence savepoint simple system stable setof
 syn keyword pgKeyword	truncate to transaction trigger table tables temp temporary tablespace type
 syn keyword pgKeyword	update unique unlisten union using
-syn keyword pgKeyword	verbose view values varying vacuum
+syn keyword pgKeyword	verbose view values vacuum
 syn keyword pgKeyword	when where
 
 " CASE .. WHEN .. ELSE .. END;  needs special handling to avoid the fact that
