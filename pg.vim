@@ -8,6 +8,9 @@
 " Always ignore case
 syn case ignore
 
+" Allow single-line comments to be reformatted nicely with gq.
+set comments=:--
+
 syn match	pgSemicolon		";"
 
 " Special values
