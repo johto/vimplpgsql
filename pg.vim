@@ -29,7 +29,7 @@ syn match	pgNumber		"-\=\<[0-9]*\.[0-9]*e[+-]\=[0-9]*\>"
 syn match	pgNumber		"\<0x[abcdefABCDEF0-9]*\>"
 
 " Comments
-syn keyword	pgTodo			TODO FIXME XXX BUG contained
+syn keyword	pgTodo			TODO CHANGEME FIXME XXX BUG contained
 syn region	pgMultiComment	start="/\*"  end="\*/" contains=pgMultiComment,pgTodo
 syn region	pgComment		start="--" end="$" contains=pgTodo
 hi def link	pgMultiComment	pgComment
