@@ -104,7 +104,7 @@ syn match	pgKeyword	"\<with\>"
 syn match   pgKeyword   "\<or\(\s\+replace\>\)\?\>"
 syn keyword pgKeyword	abort alter aggregate analyze and array as alias all add
 syn keyword pgKeyword	by before
-syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close commit
+syn keyword pgKeyword	conversion cascade current_date current_time current_timestamp class close commit cross
 syn keyword pgKeyword	cluster checkpoint check comment
 syn keyword pgKeyword	cast cascade check column columns constraint create copy
 syn keyword pgKeyword	database definer domain databases default delete distinct drop deallocate desc
