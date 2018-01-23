@@ -81,6 +81,7 @@ syn keyword	plpgsqlFlow		if then else elsif
 syn keyword	plpgsqlFlow		continue exit raise return
 syn keyword	plpgsqlFlow		declare begin exception end
 syn keyword	plpgsqlFlow		loop foreach while
+syn keyword	plpgsqlFlow		get diagnostics
 " this must be a match to allow FOR UPDATE etc. to take priority
 syn match	plpgsqlFlow		"for\>"
 
@@ -108,10 +109,10 @@ syn keyword pgKeyword	conversion cascade current_date current_time current_times
 syn keyword pgKeyword	cluster checkpoint check comment
 syn keyword pgKeyword	cast cascade check column columns constraint create copy
 syn keyword pgKeyword	database definer domain databases default delete distinct drop deallocate desc
-syn keyword pgKeyword	deferrable deferred defaults do diagnostics
+syn keyword pgKeyword	deferrable deferred defaults do
 syn keyword pgKeyword	explain exists execute exclusion found except each
 syn keyword pgKeyword	function foreign from full fetch first force
-syn keyword pgKeyword	group global get
+syn keyword pgKeyword	group global
 syn keyword pgKeyword	having
 syn keyword pgKeyword	index immutable inner initially immediate inherits instead in inout
 syn keyword pgKeyword	join
